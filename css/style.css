@@ -1,0 +1,97 @@
+.navbar-brand:hover {
+    text-shadow: 10px 10px 25px white, -10px -10px 25px white;
+}
+
+.background_img {
+    background-image: url("../img/fixedbackground.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 250px;
+    margin-top: -8px;
+}
+
+.background_img2 {
+    background-image: url("../img/fixedbackground2.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 250px;
+}
+
+.ffff {
+    position: relative;
+    left: 20px;
+}
+
+.ffff::before {
+    position: absolute;
+    content: "";
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #dcd3d8 transparent;
+    top: 26px;
+    left: 18px;
+    display: none;
+}
+
+.ffff::after {
+    position: absolute;
+    content: " ";
+    height: 44px;
+    width: 80px;
+    background-color: #dcd3d8;
+    top: 46px;
+    left: -12px;
+    border-radius: 5px;
+    display: none;
+}
+
+.ffff:active::before,
+.btn:hover::before {
+    display: block;
+}
+
+.ffff:hover::after {
+    content: "copy to clipboard";
+    color: #444146;
+    font-size: 14px;
+    display: block;
+}
+
+.ffff:active::after {
+    content: "copied";
+    display: block;
+    height: 25px;
+}
+
+
+/* start collapse */
+
+.drop {
+    color: #3c1053 !important;
+    background-color: #f8f9fa !important;
+    margin: -6px;
+    /* margin-left: -10px; */
+    margin-right: -10px;
+}
+
+.drop:hover {
+    background-color: #dcd3d8 !important;
+}
+
+.cardhover:hover {
+    background-color: #dcd3d8 !important;
+}
+
+.cardhover {
+    border-bottom: 0 !important;
+}
+
+
+/* End collapse */
+
+.carousel-inner .carousel-caption {
+    background: rgba(200, 200, 200, 0.3);
+    border-radius: 5px;
+}
